@@ -10,7 +10,7 @@ Local-first architecture might have solved the wrong half of the problem first.
 
 The hard work of the last decade went into making clients credible: CRDTs that converge correctly, sync engines that survive partition, storage that holds when the network doesn't. That work was necessary, and it is mature enough to build on now. What it left unfinished is what happens at the boundaries — where a local-first system must interact with money, regulated work, the legal substrate, and parties outside the trust circle.
 
-Those boundaries are the seams. And in production systems, the seam is where everything actually happens. Stripe at checkout. The hiring decision at a new job. The clinical handoff at a care transition. The labor relationship at a layoff. The seam is the moment the architecture has to answer for itself: to a regulator, to a court, to a counterparty, to a worker whose evidence of what happened is the only thing standing between them and a worse outcome.
+Those boundaries are the seams. And in production systems, the seam is where everything actually happens. The first payment from a new client. The hiring decision at a new job. The clinical intake at a care relationship. The labor record at a transition. The seam is where trust is established, transferred, and — when necessary — terminated on record. The Seam Stack is a pattern for deliberately designing those moments.
 
 The Seam Stack is a pattern for deliberately designing those moments.
 

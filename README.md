@@ -22,7 +22,9 @@ The Seam Stack is a pattern for deliberately designing those moments.
 The local-first foundation: CRDTs, IndexedDB, sync. The substrate is what makes the client credible as the canonical site of state. Authorization and encryption properties at this layer propagate upward into the Boundary and Evidence layers.
 
 **2. Governance.**
-The rules that determine what counts as a legitimate operation at the seam: who can participate, in what role, with what authority. Where governance is enforced cryptographically at the substrate level, it is binding regardless of party behavior.
+The rules that determine what counts as a legitimate operation at the seam: who can participate, in what role, with what authority. This includes AI agents — which the Seam Stack treats as governed parties with their own capability lifecycle, not as tools acting on behalf of a party. Governance is where the system encodes the social and legal facts that the substrate alone cannot represent. Trust tiers, role assignments, witness requirements, and who has standing to do a given thing.
+
+Governance rules are only as strict as their enforcement layer. Where governance is enforced by policy and procedure, compliance depends on the parties' trustworthiness. When enforced cryptographically at the substrate level, it is binding regardless of party behavior. The distinction matters at the seam.
 
 **3. Boundary.**
 The rules that determine what counts as a legitimate operation at the seam: who can participate, in what role, with what authority. This includes AI agents — which the Seam Stack treats as governed parties with their own capability lifecycle, not as tools acting on behalf of a party. Where governance is enforced cryptographically at the substrate level, it is binding regardless of party behavior.

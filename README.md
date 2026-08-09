@@ -18,19 +18,21 @@ The Seam Stack is a pattern for deliberately designing those moments.
 
 ### The four layers
 
-**1. Substrate.**
-The local-first foundation: CRDTs, IndexedDB, sync. The substrate is what makes the client credible as the canonical site of state. Authorization and encryption properties at this layer propagate upward into the Boundary and Evidence layers.
+The architecture comprises four layers, each with a distinct responsibility. The layers are not optional substitutions for each other. A system that omits any one of them is not local-first at the seam; it has merely relocated the trust assumption elsewhere.
 
-**2. Governance.**
-The rules that determine what counts as a legitimate operation at the seam: who can participate, in what role, with what authority. This includes AI agents — which the Seam Stack treats as governed parties with their own capability lifecycle, not as tools acting on behalf of a party. Governance is where the system encodes the social and legal facts that the substrate alone cannot represent. Trust tiers, role assignments, witness requirements, and who has standing to do a given thing.
+**1. Substrate.** The local-first foundation: CRDTs, IndexedDB, sync. The substrate is what makes the client credible as the canonical site of state.
+
+The substrate is not a commodity choice. The authorization and encryption properties of the substrate layer propagate upward into the Boundary and Evidence layers. Whether the relay can read the handoff bundle, whether access can be revoked after the fact, and whether the data is private to the worker by default are substrate questions, not governance questions. A substrate that uses end-to-end encryption with capability-based access control (such as Automerge + Keyhive) produces different architectural guarantees at the seam than one that does not. The Seam Stack documents substrate choices as they affect seam behavior.
+
+**2. Governance.** The rules that determine what counts as a legitimate operation at the seam: who can participate, in what role, with what authority. This includes AI agents — which the Seam Stack treats as governed parties with their own capability lifecycle, not as tools acting on behalf of a party. Governance is where the system encodes the social and legal facts that the substrate alone cannot represent. Trust tiers, role assignments, witness requirements, and who has standing to do a given thing.
 
 Governance rules are only as strict as their enforcement layer. Where governance is enforced by policy and procedure, compliance depends on the parties' trustworthiness. When enforced cryptographically at the substrate level, it is binding regardless of party behavior. The distinction matters at the seam.
 
-**3. Boundary.**
-The rules that determine what counts as a legitimate operation at the seam: who can participate, in what role, with what authority. This includes AI agents — which the Seam Stack treats as governed parties with their own capability lifecycle, not as tools acting on behalf of a party. Where governance is enforced cryptographically at the substrate level, it is binding regardless of party behavior.
+**3. Boundary.** The seam itself: the explicit, designed moment where the local-first system meets something it does not control. Payment processors, regulated counterparties, identity verification ceremonies, and legal record handoffs. The boundary layer is where the architecture has to answer for itself — to the parties on both sides of the crossing, and to anyone who arrives later asking what the record shows. It is also where production systems most often cede the architecture's premise.
 
-**4. Evidence.**
-What persists after the seam closes? Who has a copy of what, in what format, with what cryptographic anchor, retrievable under what circumstances? The evidence layer is what makes the system answerable: to itself, to its participants, and to anyone who arrives later asking what happened.
+The boundary layer has a characteristic failure mode: the relay. A system that passes data through a server to reach a counterparty has introduced a trust dependency at the boundary, regardless of how local-first the substrate is. The relay should facilitate and exit. Where the substrate supports end-to-end encryption, the relay can be made structurally incapable of reading the content it carries; the exit is cryptographic rather than aspirational.
+
+**4. Evidence.** What persists after the seam closes? Who has a copy of what, in what format, with what cryptographic anchor, retrievable under what circumstances? The evidence layer is what makes the system answerable: to itself, to its participants, and to anyone who arrives later asking what happened.
 
 The four layers compose. Omitting any of them relocates the trust assumption rather than eliminating it.
 

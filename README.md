@@ -25,7 +25,7 @@ The local-first foundation: CRDTs, IndexedDB, sync. The substrate is what makes 
 The rules that determine what counts as a legitimate operation at the seam: who can participate, in what role, with what authority. Where governance is enforced cryptographically at the substrate level, it is binding regardless of party behavior.
 
 **3. Boundary.**
-The seam itself: the explicit, designed moment where the local-first system meets something it does not control. Payment processors, regulated counterparties, identity verification ceremonies, legal record handoffs. The boundary layer is where the architecture has to answer for itself — and where production systems most often cede the architecture's premise.
+The rules that determine what counts as a legitimate operation at the seam: who can participate, in what role, with what authority. This includes AI agents — which the Seam Stack treats as governed parties with their own capability lifecycle, not as tools acting on behalf of a party. Where governance is enforced cryptographically at the substrate level, it is binding regardless of party behavior.
 
 **4. Evidence.**
 What persists after the seam closes? Who has a copy of what, in what format, with what cryptographic anchor, retrievable under what circumstances? The evidence layer is what makes the system answerable: to itself, to its participants, and to anyone who arrives later asking what happened.

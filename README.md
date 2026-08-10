@@ -56,7 +56,9 @@ The four layers compose. Omitting any of them relocates the trust assumption rat
 
 **[Keyhive employment seam](https://github.com/jediwright/employment-seam)** is the primary development track — the first instance of the pattern built on an authorization-backed substrate (Automerge + Keyhive), and the first to include revocation as a first-class architectural event.
 
-**[Pattern Commons #7 v0.5](https://github.com/jediwright/employment-seam)** is the current specification for the employment seam, documenting the boundary layer for the employment relationship: entry seam, exit seam, gate-check records, agent capability grants, and revocation discipline.
+**[Pattern Commons #7 v0.5](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-07-employment-seam-v0-5_2026-08-08.md)** is the current specification for the employment seam, documenting the boundary layer for the employment relationship: entry seam, exit seam, gate-check records, agent capability grants, and revocation discipline.
+
+**[Pattern Commons #0 — The Governed Crossing](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing-v0-1-1.md)** is the abstract pattern the Seam Stack formalizes: the boundary event at which a party crosses into or out of a structured relationship under a capability grant, with four invariant properties — declared scope, grant, gate, record — across all domain instantiations.
 
 ---
 

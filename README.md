@@ -12,8 +12,6 @@ The hard work of the last decade went into making clients credible: CRDTs that c
 
 Those boundaries are the seams. And in production systems, the seam is where everything actually happens. The first payment from a new client. The hiring decision at a new job. The clinical intake at a care relationship. The labor record at a transition. The seam is where trust is established, transferred, and — when necessary — terminated on record. The Seam Stack is a pattern for deliberately designing those moments.
 
-The Seam Stack is a pattern for deliberately designing those moments.
-
 ---
 
 ### The four layers

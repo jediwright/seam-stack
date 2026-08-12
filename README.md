@@ -64,7 +64,7 @@ The four layers compose. Omitting any of them relocates the trust assumption rat
 
 - [The Seam Stack](https://www.systemsofthought.com/seam-stack/) — architecture overview and design principles
 - [Nine Days, Four Prototypes, One Framework](https://www.systemsofthought.com/nine-days-four-prototypes-one-ai-development-governance-framework/) — the essay that names the pattern across four domains
-- [Full Personhood: The Governance Model AI Requires and Capitalism Never Built](https://www.systemsofthought.com/full-personhood/) — the governance argument the architecture serves
+- [Full Personhood: The Governance Model AI Requires and Capitalism Never Built]([https://www.systemsofthought.com/full-personhood/](https://www.systemsofthought.com/full-personhood-the-governance-model-ai-requires-and-capitalism-never-built/) — the governance argument the architecture serves
 
 ---
 

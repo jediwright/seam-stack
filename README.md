@@ -60,6 +60,46 @@ The four layers compose. Omitting any of them relocates the trust assumption rat
 
 ---
 
+## Where this is going
+
+**The institution keeps its copy. So do you.**
+Person-side infrastructure for the records a life produces.
+
+This repository holds the first working case: the employment seam — the records generated when a job begins, changes, or ends. Employment came first because it's the hardest ordinary case: the most parties, the most
+legal weight, and the sharpest version of a pattern that shows up
+everywhere — when a relationship with an institution ends, the
+institution keeps the history and the person starts over.
+
+The pattern isn't specific to work. A life produces records across
+health, commerce, finances, government, family, and creative practice —
+and in many of those domains, people already hold legal rights to copies
+of their records (data portability, right of access, open banking). What
+doesn't exist is the receiving side: person-owned infrastructure that
+can accept, hold, verify, and re-present those records. That's the gap
+this work targets.
+
+**Current coverage, honestly stated.** Working probes exist in four
+domains: labor (this repo), health (fhir-seam), commerce
+(checkout-seam), and personal communication (local-first social —
+where the goal is private storage and relay, not formal records; not
+every part of a life needs ceremony). What's unproven is composition:
+records from different domains coexisting in one person-owned store
+under a common schema. That is the roadmap — deliberately, instead of
+new verticals.
+
+**Near-term direction:**
+
+- A unified record schema, so boundary events from different life
+  domains compose in one store
+- Graduated ceremony — heavyweight verification where stakes are high
+  (a job ending), near-zero friction where they aren't (a receipt)
+- Delegation for AI agents: permissions scoped per life domain,
+  revocable, with a record of what was done
+- No fifth vertical until composition is demonstrated
+
+Spec-first, evidence-backed: claims here are meant to be checkable
+against the running prototype and its test suite.
+
 ### Further reading
 
 - [The Seam Stack](https://www.systemsofthought.com/seam-stack/) — architecture overview and design principles

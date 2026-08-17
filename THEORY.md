@@ -80,7 +80,7 @@ parallel under [Systems of Thought](https://www.systemsofthought.com).
 **[Resonance Architecture](https://www.systemsofthought.com/about/)** is the
 cross-domain research program that supplied the shape argument above and is a 
 cross-domain synthesis that argues for structural isomorphism between content, 
-matter, and consciousness across the same six organizational tiers first mapped 
+matter, and consciousness across the same seven organizational tiers first mapped 
 in the Tiered Content Framework, and now extended into a much larger theoretical 
 claim. It is the most speculative of the projects, and the one that, if it holds, 
 reframes all the others. The seam domain is the first evidentiary, legal-stakes 

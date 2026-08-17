@@ -46,6 +46,8 @@ The four layers compose. Omitting any of them relocates the trust assumption rat
 | Employment seam | [`vocab/employment-seam/0.5`](https://jediwright.github.io/seam-stack/vocab/employment-seam/0.5/) | v0.5 — active development |
 | Canonical assurance scale | [`vocab/assurance`](https://jediwright.github.io/seam-stack/vocab/assurance/) | v0.1 — active development |
 
+[THEORY.md](https://github.com/jediwright/seam-stack/blob/main/THEORY.md) — Why the composition ladder has seven levels in this order, and its cross-domain grounding in the Resonance Architecture research program.
+
 **Specifications and governing documents** will be published here as the architecture matures.
 
 ---

@@ -94,7 +94,7 @@ boundary conditions, signing ceremony, and evidence requirements for a
 specific domain. [PC#7](https://github.com/jediwright/employment-seam) is
 the current entry for the employment seam.
 
-**[Tiered Content Framework (TCF)](https://www.jediwright.com/research-frameworks/content-strategy-framework)** is
+**[Tiered Content Framework (TCF)](https://www.jediwright.com/content-strategy-framework)** is
 a content governance framework developed alongside the Seam Stack that
 governs how information is structured, composed, and made machine-readable
 across tiers — from individual vocabulary terms up through full knowledge

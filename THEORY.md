@@ -66,10 +66,9 @@ The relationship runs both ways. This architecture is the first
 evidentiary, legal-stakes domain mapped against the pattern, and the first
 whose level boundaries are machine-checkable. The pattern did not validate
 the design — the architecture stands on its own grounds, and nothing in it
-changed as a result of the mapping. What the mapping supplies is an answer
-to the shape question that an architectural argument alone cannot: the
-ladder looks this way because domains organized under these constraints
-keep producing this pattern.
+changed as a result of the mapping. What the mapping supplies is the missing 
+explanation: the ladder looks this way because domains organized under these 
+constraints keep producing this pattern.
 
 ---
 

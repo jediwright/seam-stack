@@ -10,7 +10,7 @@ classes in the ecosystem since then trace to the boundary. Data copies leave wit
 crossing records. Revocation closes future streams and cannot reach copies already crossed. 
 Agents act on the data floor without accountability structures. Schema evolves, and old peers 
 become illegible strangers. The seven ideals say nothing about any of this — not because they 
-are incomplete, but because the boundary was never their jurisdiction.
+are incomplete, but because the boundary was never their focus.
 
 ---
 

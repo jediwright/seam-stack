@@ -17,7 +17,9 @@ The governance methodology described here is a working solution to that failure 
 The methodology operates at three levels:
 
 **1. Session governance** — how individual working sessions are opened, run, and closed
+
 **2. Claim governance** — how outputs are validated before they become canonical
+
 **3. Project governance** — how the accumulated body of work stays internally consistent over time
 
 Each layer has its own instruments. They compose.

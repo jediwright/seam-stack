@@ -36,7 +36,7 @@ NI-2 — Boundary vs. Multi-Party Coordination: The diagnostic claim is not equi
 
 ## §2 — Interior Discipline
 
-Every interior theory generates a boundary shadow. This is a structural consequence, not a deficiency of any particular theory. An interior discipline that specifies what a system should be *inside* does not, by that specification, extend to what happens when content crosses to the outside. The boundary shadow is what remains ungoverned at the edge of any interior theory.
+Every interior theory generates a boundary edge or shadow. This is a structural consequence, not a deficiency of any particular theory. An interior discipline that specifies what a system should be *inside* does not, by that specification, extend to what happens when content crosses to the outside. The boundary shadow is what remains ungoverned at the edge of any interior theory.
 
 Understanding the boundary problem requires understanding what a well-formed interior discipline looks like: what it covers, where it is strong, and where it structurally stops.
 

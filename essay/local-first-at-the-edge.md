@@ -4,7 +4,7 @@
 
 Local-first got the hard part right first: making software work on your own device. 
 
-That hard work of the last decade went into making clients credible — CRDTs that converge, sync engines that survive partition, storage that holds when the network fails. The failure classes that a decade of interior improvement has not reduced are boundary failures. Data copies leave without governed crossing records. Revocation closes future streams and cannot reach copies already crossed. Agents act on the data floor — attributable at the op level, but ungoverned as parties. Schema evolves, and old peers become illegible strangers. The seven ideals say nothing about any of this — not because they are incomplete, but because the boundary was never their jurisdiction.
+That hard work of the last decade went into making clients credible — CRDTs that converge, sync engines that survive partition, storage that holds when the network fails. The failure classes that a decade of interior improvement has not reduced are boundary failures. Data copies leave without governed crossing records. Revocation closes future streams and cannot reach copies already crossed. Agents act on the data floor — attributable at the op level, but ungoverned as parties. Schema evolves, and old peers become illegible strangers. The seven ideals say nothing about any of this — not because they are incomplete, but because the ideals declare that crossings happen, between your devices and between collaborators, without taking jurisdiction over how those crossings are governed.
 
 ---
 

@@ -100,4 +100,4 @@ The scope claim advanced from "local-first specific on current evidence" to "dem
 
 ---
 
-*Part of the [Pattern Commons series](./index.md). See also [PC#7](./pc7-employment-seam.md) and [The Governance Methodology](./methodology.md).*
+*Part of the [Pattern Commons series](https://github.com/jediwright/local-first-series). See also [PC#7](./pc7-employment-seam.md) and [The Governance Methodology](./methodology.md).*

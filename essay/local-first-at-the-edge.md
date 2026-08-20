@@ -4,19 +4,13 @@
 
 Local-first got the hard part right first: making software work on your own device. 
 
-That hard work of the last decade went into making clients credible — CRDTs that converge, sync engines 
-that survive partition, storage that holds when the network fails. Most recurring failure 
-classes in the ecosystem since then trace to the boundary. Data copies leave without governed 
-crossing records. Revocation closes future streams and cannot reach copies already crossed. 
-Agents act on the data floor without accountability structures. Schema evolves, and old peers 
-become illegible strangers. The seven ideals say nothing about any of this — not because they 
-are incomplete, but because the boundary was never their focus.
+That hard work of the last decade went into making clients credible — CRDTs that converge, sync engines that survive partition, storage that holds when the network fails. The failure classes that a decade of interior improvement has not reduced are boundary failures. Data copies leave without governed crossing records. Revocation closes future streams and cannot reach copies already crossed. Agents act on the data floor — attributable at the op level, but ungoverned as parties. Schema evolves, and old peers become illegible strangers. The seven ideals say nothing about any of this — not because they are incomplete, but because the boundary was never their jurisdiction.
 
 ---
 
 ## §1 — The Diagnostic Claim
 
-Local-first has an interior theory. At the boundary (or exterior) it has point solutions — and no unifying theory.
+Local-first has an interior theory. At the boundary it has point solutions — and no unifying theory.
 
 The seven ideals Kleppmann, van Hardenberg, McGranaghan, and Wiggins published in 2019 are a complete and defensible theory of what a local-first system should be *inside*: data on your device, offline operation, real-time collaboration, long-term preservation. Every one of those ideals is a claim about interior behavior — how the system behaves when it is working correctly, in its own space.
 
@@ -126,7 +120,7 @@ Any non-human actor that touches the local-first data floor is a contact class w
 
 This principle addresses the ungoverned-agent-contact shadow of the collaboration gap. An agent entering the data floor from an external context is not an interior collaborator; it is a governed party at a boundary, with its own contact class, capability lifecycle, and revocation semantics distinct from those of human collaborators sharing replicated state.
 
-*The first known working example of this principle operating on a local-first data floor, on current evidence: the employment-seam prototype (github.com/jediwright/employment-seam), implementing contactClass: human | agent, AgentActionContext, and assertCapabilityCurrent() against Keyhive-managed replicated state. P11 as formalized in PC\#7 v0.5 as Principle 6: "Agents are governed parties, never authors of record." (\~, scoped absence claim: this scoping applies to local-first replicated data as the governed object, with contact-class taxonomy and act-time capability currency checks. No broader claim is made.)*
+*The first known worked example of this principle operating on a local-first data floor, on current evidence: the employment-seam prototype (github.com/jediwright/employment-seam), implementing contactClass: human | agent, AgentActionContext, and assertCapabilityCurrent() against Keyhive-managed replicated state. P11 as formalized in PC\#7 v0.5 as Principle 6: "Agents are governed parties, never authors of record." (\~, scoped absence claim: this scoping applies to local-first replicated data as the governed object, with contact-class taxonomy and act-time capability currency checks. No broader claim is made.)*
 
 P11 and the 2026 agent-capability claims-race: The agent-capability governance space is active as of 2026\. The absence claim for P11 is scoped to the local-first data floor specifically — the first known worked example of this boundary principle implemented at the spec and prototype level on a local-first replicated substrate, on current evidence. Any broader phrasing would be falsifiable against the IBCT/AIP line and Vouchsafe (2026) work.
 

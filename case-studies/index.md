@@ -1,6 +1,6 @@
 # Build Case Studies
 
-**Jedi Wright / UX Minds, LLC**
+**Jedi Wright / Systems of Thought / UX Minds, LLC**
 
 ---
 

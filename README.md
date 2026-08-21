@@ -102,7 +102,7 @@ Current canonical entries:
 |---|---|---|
 | [PC#0](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing.md) | The Governed Crossing — root pattern | v0.1.2 — Counter-Pass complete |
 | [PC#7](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-07-employment-seam.md) | Employment Seam | v0.5 — reference implementation |
-| PC#8 | Substrate-Crossing Seam (AT Protocol) | v0.1.3 — Phases 0–2 complete; 27/27 tests passing |
+| [PC#8](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-08-substrate-crossing-seam.md) | Substrate-Crossing Seam (AT Protocol) | v0.1.3 — Phases 0–2 complete; 27/27 tests passing |
 
 Entries #1–#6 document earlier prototype-phase work in commerce, healthcare, social networking, and infrastructure. The series is not exhaustive and is not intended to be: the pattern can be instantiated in any domain where a governed crossing makes sense. Canonical entries represent the classes where the architecture has been stress-tested and formalized. Pattern-conformant implementations that have not been submitted for canonical review are valid governed crossings; they have simply not entered the taxonomy index.
 

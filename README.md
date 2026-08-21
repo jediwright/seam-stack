@@ -82,7 +82,7 @@ The `seam:CrossingRecord` vocabulary is the schema contract. The four layers are
 
 **[Keyhive employment seam](https://github.com/jediwright/employment-seam)** is the primary development track — the first instance of the pattern built on an authorization-backed substrate (Automerge + Keyhive), and the first to include revocation as a first-class architectural event.
 
-**[Pattern Commons #7 v0.5](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-07-employment-seam-v0-5_2026-08-08.md)** is the current specification for the employment seam, documenting the boundary layer for the employment relationship: entry seam, exit seam, gate-check records, agent capability grants, and revocation discipline.
+**[Pattern Commons #7 v0.5](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-07-employment-seam.md)** is the current specification for the employment seam, documenting the boundary layer for the employment relationship: entry seam, exit seam, gate-check records, agent capability grants, and revocation discipline.
 
 **[Pattern Commons #0 — The Governed Crossing](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing.md)** is the abstract pattern the Seam Stack formalizes: the boundary event at which a party crosses into or out of a structured relationship under a capability grant, with four invariant properties — declared scope, grant, gate, record — across all domain instantiations.
 
@@ -101,7 +101,7 @@ Current canonical entries:
 | Entry | Domain | Status |
 |---|---|---|
 | [PC#0](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing.md) | The Governed Crossing — root pattern | v0.1.2 — Counter-Pass complete |
-| [PC#7](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-07-employment-seam-v0-5_2026-08-08.md) | Employment Seam | v0.5 — reference implementation |
+| [PC#7](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-07-employment-seam.md) | Employment Seam | v0.5 — reference implementation |
 | PC#8 | Substrate-Crossing Seam (AT Protocol) | v0.1.3 — Phases 0–2 complete; 27/27 tests passing |
 
 Entries #1–#6 document earlier prototype-phase work in commerce, healthcare, social networking, and infrastructure. The series is not exhaustive and is not intended to be: the pattern can be instantiated in any domain where a governed crossing makes sense. Canonical entries represent the classes where the architecture has been stress-tested and formalized. Pattern-conformant implementations that have not been submitted for canonical review are valid governed crossings; they have simply not entered the taxonomy index.
@@ -116,7 +116,7 @@ Person-side infrastructure for the records a life produces.
 This repository holds the first working case: the employment seam — the records generated when a job begins, changes, or ends. Employment came first because it's the hardest ordinary case: the most parties, the most
 legal weight, and the sharpest version of a pattern that shows up
 everywhere — when a relationship with an institution ends, the
-institution keeps the history and the person starts over.
+institution keeps the history, and the person starts over.
 
 The pattern isn't specific to work. A life produces records across
 health, commerce, finances, government, family, and creative practice —

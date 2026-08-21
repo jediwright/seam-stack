@@ -36,6 +36,32 @@ The four layers compose. Omitting any of them relocates the trust assumption rat
 
 ---
 
+### Building with the pattern
+
+**The Seam Stack is an open architectural pattern, not a permissioned registry.**
+
+Any system that satisfies the four constitutive properties of a governed crossing and conforms to the `seam:CrossingRecord` base shape is a fully valid governed crossing — no canonical entry number, no upstream approval, and no repository access required. Build against the pattern freely.
+
+A governed crossing has four constitutive properties. A boundary event missing any one of them is not a governed crossing; it is an ungoverned exposure with a name attached:
+
+1. **A declared scope.** The crossing surface is explicit and minimal. What crosses is declared; what does not cross is also declared.
+2. **A grant.** Authority to cross is issued by an eligible grantor to an eligible crossing party. The grant is the legal-responsibility anchor; the crossing is attributable to it.
+3. **A gate.** Every crossing attempt is checked against the current capability state of the grant at act time. The gate fails closed: unconfirmed revocation blocks; silence blocks.
+4. **A record.** Every gate-check invocation — pass or block — emits a `seam:CrossingRecord`. The record is a first-class output of the crossing, not an audit log appended afterward.
+
+**Pattern conformance vs. canonical entry.** The Pattern Commons (see below) maintains a numbered series of canonical domain entries — PC#0 through PC#N — each representing a governed crossing class with peer-reviewed evidence and formal blast-radius review. Canonical numbering is a documentation and taxonomy layer above the pattern, not a gate below it. A working healthcare intake seam, a housing transition seam, or a financial record crossing built against this architecture is a valid governed crossing whether or not it ever becomes a canonical entry. The canon exists to make the generalization claim; your implementation does not need to make that claim to be real.
+
+| Dimension | Implementing the pattern | Contributing to the canon (PC#N) |
+|---|---|---|
+| Scope | Domain-specific boundary crossings in your own system | Reusable, cross-cutting entries in the core taxonomy |
+| Requirements | Four constitutive properties + `seam:CrossingRecord` conformance | Prototype evidence, operational proof, formal blast-radius review |
+| Validation | Schema conformance and runtime execution at your seam | Evidence-gated integration into the taxonomy index |
+| Permission gate | None. Build today without approval. | Governance-gated via the evidence review framework |
+
+The `seam:CrossingRecord` vocabulary is the schema contract. The four layers are the architectural contract. Both are available now.
+
+---
+
 ### What this repository contains
 
 **`vocab/`** — Vocabulary namespaces for the Seam Stack architecture. Stable, resolvable IRIs for implementers.
@@ -59,6 +85,26 @@ The four layers compose. Omitting any of them relocates the trust assumption rat
 **[Pattern Commons #7 v0.5](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-07-employment-seam-v0-5_2026-08-08.md)** is the current specification for the employment seam, documenting the boundary layer for the employment relationship: entry seam, exit seam, gate-check records, agent capability grants, and revocation discipline.
 
 **[Pattern Commons #0 — The Governed Crossing](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing-v0-1-1.md)** is the abstract pattern the Seam Stack formalizes: the boundary event at which a party crosses into or out of a structured relationship under a capability grant, with four invariant properties — declared scope, grant, gate, record — across all domain instantiations.
+
+**Pattern Commons #8 — The Substrate-Crossing Seam** governs crossings from local-first substrates into publicly indexed, relay-distributed regimes, with AT Protocol as the reference implementation. Phases 0, 1, and 2 are complete: 27/27 tests passing, live AT Protocol crossings documented, and `seamCrossingRef` back-pointer verified at the PDS layer.
+
+---
+
+### The Pattern Commons
+
+The Pattern Commons is the canonical taxonomy of governed crossing classes. Each entry specifies a domain instantiation of the governed crossing pattern — naming the seam trigger, the participant model, the grant structure, the gate conditions, the record schema, and the failure taxonomy for that class.
+
+**[PC#0 — The Governed Crossing](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing-v0-1-1.md)** is the root entry: the abstract pattern that all domain entries instantiate. Read this first.
+
+Current canonical entries:
+
+| Entry | Domain | Status |
+|---|---|---|
+| [PC#0](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing-v0-1-1.md) | The Governed Crossing — root pattern | v0.1.1 — Counter-Pass complete |
+| [PC#7](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-07-employment-seam-v0-5_2026-08-08.md) | Employment Seam | v0.5 — reference implementation |
+| PC#8 | Substrate-Crossing Seam (AT Protocol) | v0.1.3 — Phases 0–2 complete; 27/27 tests passing |
+
+Entries #1–#6 document earlier prototype-phase work in commerce, healthcare, social networking, and infrastructure. The series is not exhaustive and is not intended to be: the pattern can be instantiated in any domain where a governed crossing makes sense. Canonical entries represent the classes where the architecture has been stress-tested and formalized. Pattern-conformant implementations that have not been submitted for canonical review are valid governed crossings; they have simply not entered the taxonomy index.
 
 ---
 

@@ -84,7 +84,7 @@ The `seam:CrossingRecord` vocabulary is the schema contract. The four layers are
 
 **[Pattern Commons #7 v0.5](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-07-employment-seam-v0-5_2026-08-08.md)** is the current specification for the employment seam, documenting the boundary layer for the employment relationship: entry seam, exit seam, gate-check records, agent capability grants, and revocation discipline.
 
-**[Pattern Commons #0 — The Governed Crossing](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing-v0-1-1.md)** is the abstract pattern the Seam Stack formalizes: the boundary event at which a party crosses into or out of a structured relationship under a capability grant, with four invariant properties — declared scope, grant, gate, record — across all domain instantiations.
+**[Pattern Commons #0 — The Governed Crossing](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing.md)** is the abstract pattern the Seam Stack formalizes: the boundary event at which a party crosses into or out of a structured relationship under a capability grant, with four invariant properties — declared scope, grant, gate, record — across all domain instantiations.
 
 **Pattern Commons #8 — The Substrate-Crossing Seam** governs crossings from local-first substrates into publicly indexed, relay-distributed regimes, with AT Protocol as the reference implementation. Phases 0, 1, and 2 are complete: 27/27 tests passing, live AT Protocol crossings documented, and `seamCrossingRef` back-pointer verified at the PDS layer.
 
@@ -94,13 +94,13 @@ The `seam:CrossingRecord` vocabulary is the schema contract. The four layers are
 
 The Pattern Commons is the canonical taxonomy of governed crossing classes. Each entry specifies a domain instantiation of the governed crossing pattern — naming the seam trigger, the participant model, the grant structure, the gate conditions, the record schema, and the failure taxonomy for that class.
 
-**[PC#0 — The Governed Crossing](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing-v0-1-1.md)** is the root entry: the abstract pattern that all domain entries instantiate. Read this first.
+**[PC#0 — The Governed Crossing](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing.md)** is the root entry: the abstract pattern that all domain entries instantiate. Read this first.
 
 Current canonical entries:
 
 | Entry | Domain | Status |
 |---|---|---|
-| [PC#0](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing-v0-1-1.md) | The Governed Crossing — root pattern | v0.1.1 — Counter-Pass complete |
+| [PC#0](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing.md) | The Governed Crossing — root pattern | v0.1.2 — Counter-Pass complete |
 | [PC#7](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-07-employment-seam-v0-5_2026-08-08.md) | Employment Seam | v0.5 — reference implementation |
 | PC#8 | Substrate-Crossing Seam (AT Protocol) | v0.1.3 — Phases 0–2 complete; 27/27 tests passing |
 

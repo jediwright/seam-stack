@@ -13,5 +13,5 @@ four-layer architectural pattern for local-first systems where the seam, not
 the server, is the primary design surface.
 
 **Status:** v0.1 — active development  
-**Specification:** [Form C Items 1+2 design session, 2026-08-08]  
+**Specification:** [schema.md](schema.md) (amended 2026-08-22)
 **Maintainer:** [Jedi Wright](https://www.jediwright.com) / [Systems of Thought](https://www.systemsofthought.com) / [UX Minds, LLC](https://www.uxminds.org)

@@ -24,7 +24,7 @@ What it means, practically, is that the TypeScript sync surface may be a migrati
 
 The response I chose before Phase 1 opened was to treat the sync layer as explicitly swappable. The crossing-record schema — the thing that actually carries governance meaning across the boundary — is specified at the pattern level, not the package level. It describes what a crossing record must contain and why. The implementation wires it to the current packages; the spec survives a package replacement. When Hexane lands, the migration touches one surface. The governance layer doesn't move.
 
-This wasn't a complicated architectural decision. It was a direct response to having watched the pattern play out once before with Automerge's own TypeScript-to-Rust transition history, and to choosing not to be surprised by it again.
+This wasn't a complicated architectural decision. It was a direct response to having watched the pattern play out once before with Automerge's own TypeScript-to-Rust transition history, and to choosing not to be surprised by it.
 
 ---
 

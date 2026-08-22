@@ -46,29 +46,67 @@ dispute visible the same way. No single signature has this property. It
 appears only where the schema forces multiple signed units into a required
 relationship — and it is enforced by schema constraint, not by discipline.
 
-**No adjudication level exists, by design.** Some domains need a
-structural level for events that cannot be authored in advance — a place
-where the system itself decides what happened. Whether that level appears
-is governed by one question: can the domain's events be fully specified
-before they occur? Here they can. The conditions that trigger a crossing,
-the stages of the signing process, and the terms of the agreement itself
-are all fully defined when the arrangement is first created. Disagreement
-is recorded as data — a contested status, preserved divergent accounts —
-and residual dispute is exported to whatever institution the parties can
-reach, never built into the structure. The pattern predicted this level's
-absence for a domain shaped this way, and the prediction held, including
-the hardest case: one party unilaterally and irreversibly cutting the
-other off. The record's timestamps establish what happened first, so the
-event is handled as evidence rather than by any built-in adjudication
-level.
+**No adjudication level exists, by design.** The architecture treats
+crossings as evidentiary: it records what happened, preserves divergent
+accounts as data — a contested status, preserved divergent narratives —
+and exports residual dispute to whatever institution the parties can
+reach. The structural level for system-determined verdicts is absent not
+because building one is impossible but because the architecture does not
+take the adjudicating role; it takes the recording role.
+
+Pre-specifiability characterizes the canonical seam domains well. The
+conditions that trigger a crossing, the stages of the signing process,
+and the terms of the arrangement are fully defined when the arrangement
+is first created. This holds for the employment seam's canonical entry
+and exit events, and the pattern predicted this level's absence for
+domains shaped this way. Three scope restrictions apply and should be
+named rather than left as unaddressed inclusions.
+
+*Timestamp ordering in conflict scenarios.* Where two parties emit
+records of a pre-specified event with conflicting author-declared
+timestamps, the architecture captures both records and exports the
+ordering question to external institutions. This is not a
+pre-specifiability failure for the event itself — the event is
+pre-specified — but the mechanism by which the architecture resolves
+ordering (timestamp primacy) is behavior-dependent in v0 pending
+external anchor infrastructure. See KL-THEORY-01.
+
+*Emergent-content crossings.* Crossings where terms are not fully known
+when the arrangement is created — clinical intake generating mid-procedure
+mandatory-reporting obligations, mid-process renegotiations where the
+arrangement does not yet exist at "arrangement creation" time — are
+outside the canonical seam scope and may require an adjudication level
+in their respective domains.
+
+*Procedural-fact crossings.* Crossings requiring facts that are not
+knowable before the ceremony begins — probabilistic biometric
+verification producing confidence intervals, not binary pre-specified
+outcomes — are similarly outside the canonical scope.
+
+The evidentiary commitment is the design choice; pre-specifiability
+characterizes the domains where that choice is clean. The scope
+restrictions name where it is not.
+
+**Known Limit — KL-THEORY-01:** Timestamp-based precedence resolution
+for unilateral exit is behavior-dependent in v0. The claim that "the
+record's timestamps establish what happened first" is correct as a
+design commitment; it is not a currently delivered property. Resolves
+when `witness-signed` or `timestamp-signed` lineage anchor
+infrastructure is available and `lineageAnchorType` is unlocked
+accordingly.
 
 The relationship runs both ways. This architecture is the first
 evidentiary, legal-stakes domain mapped against the pattern, and the first
-whose level boundaries are machine-checkable. The pattern did not validate
-the design — the architecture stands on its own grounds, and nothing in it
-changed as a result of the mapping. What the mapping supplies is the missing 
-explanation: the ladder looks this way because domains organized under these 
-constraints keep producing this pattern.
+designed so that level boundaries are machine-checkable. Field-level
+constraints — vocabulary conformance, field cardinality, and datatype — are
+enforced by the base SHACL shape now. Composition-level level-boundary
+predicates depend on instance-specific SHACL shapes not yet produced; until
+those shapes exist, composition-level machine-checkability is a design
+commitment, not a delivered property. The pattern did not validate the design —
+the architecture stands on its own grounds, and nothing in it changed as a
+result of the mapping. What the mapping supplies is the missing explanation:
+the ladder looks this way because domains organized under these constraints
+keep producing this pattern.
 
 ---
 

@@ -16,7 +16,7 @@ Those boundaries are the seams. And in production systems, the seam is where eve
 
 ### The four layers
 
-The architecture comprises four layers, each with a distinct responsibility. The layers are not optional substitutions for each other. A system that omits any one of them is not local-first at the seam; it has merely relocated the trust assumption elsewhere.
+The architecture comprises four layers, each with a distinct responsibility. The layers are not optional substitutions for each other. Given the local-first commitment, a system that omits any one of them is not local-first at the seam; it has merely relocated the trust assumption elsewhere.
 
 **1. Substrate.** The local-first foundation: CRDTs, IndexedDB, sync. The substrate is what makes the client credible as the canonical site of state.
 
@@ -26,19 +26,29 @@ The substrate is not a commodity choice. The authorization and encryption proper
 
 Governance rules are only as strict as their enforcement layer. Where governance is enforced by policy and procedure, compliance depends on the parties' trustworthiness. When enforced cryptographically at the substrate level, it is binding regardless of party behavior. The distinction matters at the seam.
 
+**v0 enforcement scope.** In v0, the schema enforces: field presence and cardinality, vocabulary conformance, IRI format, and `xsd:dateTime` typing on `emittedAt`. All temporal truth (timestamp ordering), chain integrity, multi-party bonding, decay tracking, and supersession linkage are behavior-dependent in v0. Their cryptographic enforcement is the target architecture. The principle above names the full goal; v0 delivers representation and mechanical schema verification. Cryptographic enforcement of cross-party integrity is a development horizon item, not a current deployment property. See the crossing-record schema specification for the per-property breakdown.
+
 **3. Boundary.** The seam itself: the explicit, designed moment where the local-first system meets something it does not control. Payment processors, regulated counterparties, identity verification ceremonies, and legal record handoffs. The boundary layer is where the architecture has to answer for itself — to the parties on both sides of the crossing, and to anyone who arrives later asking what the record shows. It is also where production systems most often cede the architecture's premise.
 
-The boundary layer has a characteristic failure mode: the relay. A system that passes data through a server to reach a counterparty has introduced a trust dependency at the boundary, regardless of how local-first the substrate is. The relay should facilitate and exit. Where the substrate supports end-to-end encryption, the relay can be made structurally incapable of reading the content it carries; the exit is cryptographic rather than aspirational.
+The boundary layer has a characteristic failure mode: the relay. A system that passes data through a server to reach a counterparty has introduced a trust dependency at the boundary, regardless of how local-first the substrate is. The relay should facilitate and exit. Where the substrate supports end-to-end encryption, the relay can be made structurally incapable of reading the content it carries — a content-opacity exit that is cryptographic rather than aspirational.
+
+Three exit properties are distinct. *Content-opacity exit*: the relay cannot read the payload; E2E encryption makes this structural. *Architectural exit*: the relay is no longer a required crossing component; depends on domain counterparty requirements. *Institutional exit*: the relay is no longer legally or contractually obligated to participate; a function of regulatory jurisdiction and counterparty contract, not architecture. In regulated domains — ACH and SWIFT settlement rails, HIPAA Business Associate relationships, AML/KYC verification workflows — the relay's continued institutional presence is required by law or contract regardless of payload opacity. The architecture delivers content-opacity exit. Architectural and institutional exit are domain and jurisdiction-dependent boundary conditions, not architectural outcomes.
 
 **4. Evidence.** What persists after the seam closes? Who has a copy of what, in what format, with what cryptographic anchor, retrievable under what circumstances? The evidence layer is what makes the system answerable: to itself, to its participants, and to anyone who arrives later asking what happened.
 
-The four layers compose. Omitting any of them relocates the trust assumption rather than eliminating it.
+The four layers compose as a package for the local-first commitment. Given that commitment, omitting any layer relocates the trust assumption rather than eliminating it. A server-custody deployment may consolidate some responsibilities differently and achieve seam-crossing guarantees by other means — but it is not local-first at the seam. This architecture does not assert that local-first is the only approach to the seam problem; it asserts that the seam problem has a local-first solution and that the solution requires all four layers.
+
+Evidence is not absorbed by Substrate. A Substrate append-only log is a platform-side record of state changes, accessible to the platform. The Evidence layer governs who holds the legally meaningful crossing record after the seam closes — the worker, not the platform, under the worker's own cryptographic anchor, retrievable independently of the platform. Where the substrate operates under end-to-end encryption with capability-based access control, the platform cannot produce an Evidence artifact from its own logs; it holds encrypted state it cannot read. The worker holds the Evidence-layer artifact. That custody distinction is the architecture's point.
 
 ---
 
 ### Building with the pattern
 
 **The Seam Stack is an open architectural pattern, not a permissioned registry.**
+
+**Design position relative to prior art.** Layered architectures for governed inter-system trust are established territory. The Trust over IP (ToIP) Technology Architecture Specification (PR2, September 2024) — defining four layers: Trust Support, Trust Spanning, Trust Tasks, and Trust Applications — and the W3C Verifiable Credentials data model collectively occupy functionally related space: cryptographic substrate, governance rules, crossing mechanics, and credential evidence. DIF Presentation Exchange governs credential disclosure at the boundary. The Seam Stack builds in relation to that prior-art field, not from a blank slate.
+
+Three design commitments distinguish this architecture from that field. First, the substrate treats the local CRDT client as the canonical site of state — not a credential carrier for server-issued credentials but the primary site where records exist, governed by capability-based access control that propagates upward into Boundary and Evidence. Second, the crossing design is finality-arbiter-free with a fail-closed gate: no structural adjudication level exists, and uncertainty blocks. Third, crossing records are designed for deferred third-party legibility without platform mediation: the `seam:CrossingRecord` is a first-class output, structured to be self-describing and verifiable by a party not present at the crossing, without re-querying the originating platform.
 
 Any system that satisfies the four constitutive properties of a governed crossing and conforms to the `seam:CrossingRecord` base shape is a fully valid governed crossing — no canonical entry number, no upstream approval, and no repository access required. Build against the pattern freely.
 

@@ -1,21 +1,12 @@
 # GSEF v0.2 Scope Statement
 
-⚑ STAMP: SINGLE-CONTEXT — NOT PANELED
-
 **Artifact class:** GSEF scope statement, v0.1 → v0.2 revision (canonicalizes the
 Q-A verdict, the T-2 temporal-crossing check definition, and the M5 admissibility
 naming).
 **Date:** 2026-08-19
 **Session:** GSEF v0.2 Scope Statement Session (Session Harness v0.2, Mode 1,
 CONTEXTUAL)
-**Scope authority:** `gsef-qa-resolution_2026-08-18.md` §5.1, §5.2 (revision
-target and open-item sources); SL-0124 (Q-A verdict); SL-0125 (Q-D evidence unit).
-**Status:** PROPOSED-CANONICAL pending operator apply. All coinages ⚑ PROPOSED
-pending lexicon queue.
-**Supersedes:** the v0.1 scope text in `session-handoff-gsef-spec-v0-1_2026-08-07.md`
-(queue-don't-reopen: the v0.1 document is not modified; this statement supersedes
-its scope text by issuance).
-
+**Status:** CANONICAL — applied 2026-08-22. 
 ---
 
 ## 1. Scope statement (normative)
@@ -131,7 +122,7 @@ component breakdown where mixed). Each layer's GSEF parameterization then names
 the **layer-relative consequences** of that class: one taxonomy application,
 four consequence sets. The taxonomy is not re-applied per layer.
 
-*First worked instance (illustration, not validation):* `LINEAGE.md` L-4 (D),
+*First worked instance (illustration, not validation):* `employment-seam LINEAGE.md` L-4 (D),
 L-5 (D), L-6 (B) — one class per event, component breakdowns recorded.
 ~ single-context; classifications sit in the Counter-Pass lane if the lineage
 record enters publication track.

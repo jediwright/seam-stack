@@ -157,6 +157,4 @@ declaration-block §6 (none implemented, none claimed); FRAMEWORK.md drafting
 
 ---
 
-*GSEF v0.2 Scope Statement — UX Minds, LLC · J. Wright · 2026-08-19.
-SINGLE-CONTEXT — NOT PANELED. PROPOSED-CANONICAL pending operator apply.
-Delivery-not-application enforced.*
+*GSEF v0.2 Scope Statement — UX Minds, LLC · J. Wright · 2026-08-22.

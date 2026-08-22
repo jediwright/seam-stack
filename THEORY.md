@@ -87,6 +87,18 @@ The evidentiary commitment is the design choice; pre-specifiability
 characterizes the domains where that choice is clean. The scope
 restrictions name where it is not.
 
+**Known Limit — KL-THEORY-03:** Finality-arbiter-free scope. Three
+crossing sub-classes are outside the canonical pre-specifiable scope:
+(a) timestamp-ordering conflicts in hostile-partition scenarios — the
+event is pre-specified but timestamp-precedence resolution is
+behavior-dependent in v0 pending anchoring infrastructure; (b)
+emergent-content crossings where terms are not fully known at
+arrangement creation; (c) procedural-fact crossings where required
+facts are not knowable before the crossing ceremony begins. These
+sub-classes do not invalidate the evidentiary design commitment; they
+bound the domains where that commitment is clean and name where
+external adjudication may still be required.
+
 **Known Limit — KL-THEORY-01:** Timestamp-based precedence resolution
 for unilateral exit is behavior-dependent in v0. The claim that "the
 record's timestamps establish what happened first" is correct as a
@@ -107,6 +119,12 @@ the architecture stands on its own grounds, and nothing in it changed as a
 result of the mapping. What the mapping supplies is the missing explanation:
 the ladder looks this way because domains organized under these constraints
 keep producing this pattern.
+
+**Known Limit — KL-THEORY-02:** Composition-level machine-checkability
+is a design goal. The base SHACL shape delivers field-level enforcement
+only. Level-boundary predicates and composition-integrity constraints
+require instance-specific shapes currently not produced. See also
+KL-SCHEMA-04.
 
 ---
 

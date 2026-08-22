@@ -84,7 +84,13 @@ The `seam:CrossingRecord` vocabulary is the schema contract. The four layers are
 
 [THEORY.md](https://github.com/jediwright/seam-stack/blob/main/THEORY.md) — Why the four layers are composed in this order, and the cross-domain research that grounds the structural argument.
 
-**Specifications and governing documents** will be published here as the architecture matures.
+**Governed schema evolution** — schema changes to Seam Stack vocabularies are
+classified by blast radius and change driver under [GSEF v0.2](governed-schema-evolution/gsef-v0-2-scope-statement_2026-08-19.md).
+Lineage records for each vocabulary namespace:
+
+| Vocabulary | Lineage | Status |
+|---|---|---|
+| Crossing record (base shape) | [`vocab/crossing-record/0.1/lineage.md`](vocab/crossing-record/0.1/lineage.md) | L-1–L-4 (2026-08-22) |
 
 ---
 

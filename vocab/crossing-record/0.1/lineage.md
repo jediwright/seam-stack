@@ -2,7 +2,9 @@
 ## `vocab/crossing-record/0.1`
 
 Governed under: GSEF v0.2 Scope Statement (`gsef-v0-2-scope-statement_2026-08-19.md`)  
-Schema IRI namespace: `https://jediwright.github.io/seam-stack/vocab/crossing-record/0.1#`  
+
+Schema IRI namespace: `https://jediwright.github.io/seam-stack/vocab/crossing-record/0.1#` 
+
 Record type: append-only lineage register  
 
 ---

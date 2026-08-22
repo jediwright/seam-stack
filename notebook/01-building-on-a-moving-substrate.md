@@ -28,7 +28,7 @@ This wasn't a complicated architectural decision. It was a direct response to ha
 
 ---
 
-Whether the posture is sufficient won't be known until the transition actually happens. The prototype exists partly to find out — to build enough surface area against the current stack that we understand exactly what's coupled and what isn't before the coupling is tested by a real upstream change. That's what the build is for, among other things.
+Whether the posture is sufficient won't be known until the transition actually happens. The prototype exists partly to find out — to build enough surface area against the current stack that I understand exactly what's coupled and what isn't before the coupling is tested by a real upstream change. That's what the build is for, among other things.
 
 The Keyhive notebook closing is a maturation signal, not an abandonment signal. The protocol is formally grounded. The Rust implementation is active. The community is small, but the foundational work is sound. Building here is still the right call. The question was never whether to build here. It was how to build here in a way that doesn't require redoing the governance layer every time the implementation layer moves.
 

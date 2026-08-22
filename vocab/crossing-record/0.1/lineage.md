@@ -115,33 +115,29 @@ This base shape generalizes across seam types. Instance-specific extensions live
 
 ---
 
-### L-4a — THEORY.md propagation apply [PENDING]
+### L-4a — THEORY.md propagation apply
 
-Append this entry when the THEORY.md amendment block for chain property language and KL-THEORY-02 qualifier is operator-applied.
-
-| Field | Placeholder |
+| Field | Value |
 |---|---|
 | entryId | L-4a |
-| changeDate | [date of apply] |
+| changeDate | 2026-08-22 |
 | changeClass | A |
 | changeDriver | endogenous |
-| changeDescription | THEORY.md amended to carry "design goal — conditional shapes pending" qualifier on chain property language, per L-4 propagation obligation and KL-THEORY-02 cross-reference. |
+| changeDescription | THEORY.md amended to carry KL-THEORY-02 and KL-THEORY-03 known limit blocks. KL-THEORY-02 names composition-level machine-checkability as a design goal pending instance-specific SHACL shapes. KL-THEORY-03 names the three crossing sub-classes outside the canonical pre-specifiable scope. Chain-property qualifier obligation from L-4 met. |
 | propagationObligationClosed | L-4 → THEORY.md |
 | recordId | `https://jediwright.github.io/seam-stack/vocab/crossing-record/0.1/lineage#L-4a` |
 
 ---
 
-### L-4b — seam-stack/README.md propagation apply [PENDING]
+### L-4b — seam-stack/README.md propagation apply
 
-Append when README.md chain integrity and composition integrity sections are operator-amended.
-
-| Field | Placeholder |
+| Field | Value |
 |---|---|
 | entryId | L-4b |
-| changeDate | [date of apply] |
+| changeDate | 2026-08-22 |
 | changeClass | A |
 | changeDriver | endogenous |
-| changeDescription | seam-stack/README.md chain integrity and composition integrity sections amended to carry "design goal — conditional shapes pending" qualifier, per L-4 propagation obligation. |
+| changeDescription | seam-stack/README.md amended with v0 enforcement scope disclosure (Item 1), relay-exit three-property distinction and KL-README-01 prose (Item 4), corrected ToIP prior-art acknowledgment (Item 6), and layer necessity conditionalization on local-first premise (Item 7). Chain-integrity and composition-integrity qualifier obligation from L-4 met. |
 | propagationObligationClosed | L-4 → seam-stack/README.md |
 | recordId | `https://jediwright.github.io/seam-stack/vocab/crossing-record/0.1/lineage#L-4b` |
 
@@ -218,8 +214,8 @@ Append when Artifact B composition integrity language is operator-amended.
       "fieldDelta": false,
       "vocabDelta": false,
       "propagationPending": [
-        { "entryId": "L-4a", "target": "THEORY.md", "status": "PENDING" },
-        { "entryId": "L-4b", "target": "seam-stack/README.md", "status": "PENDING" },
+        { "entryId": "L-4a", "target": "THEORY.md", "status": "CLOSED" },
+        { "entryId": "L-4b", "target": "seam-stack/README.md", "status": "CLOSED" },
         { "entryId": "L-4c", "target": "Artifact-B-r2.4", "status": "PENDING" }
       ]
     }

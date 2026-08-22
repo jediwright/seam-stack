@@ -16,7 +16,7 @@ This is the third time this has happened with a project this work depends on.
 
 Ink & Switch follows a legible arc. Deep research. Lab notebook entries as the findings accumulate. Formal validation when the design is settled enough to stake academic credibility on it. A synthesizing essay. Then the handoff — the project moves to the community, the ecosystem, or wherever the ecosystem currently is. Cambria followed it. Automerge followed it and landed more successfully than most, because there were enough production users with enough stake in it to sustain real maintenance. Keyhive on TypeScript is now at the notebook-close stage of the same arc, with Hexane, the successor implementation, already in motion.
 
-None of this is a criticism. It's a research lab pattern, and it's a reasonable one. The lab produces rigorous foundations. The notebook closing on a formal security proof means the protocol design is settled — which is useful information if you're building on it. The question is what it means for the build.
+None of this is a criticism. It's a research lab pattern, and it's a reasonable one. The lab produces rigorous foundations. The notebook closing on a formal security proof likely means the protocol design is settled — which is useful information if you're building on it. The question is what it means for the build.
 
 ---
 

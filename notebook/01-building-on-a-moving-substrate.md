@@ -8,7 +8,7 @@ On July 31, Ink & Switch published [their latest entry](https://www.inkandswitch
 
 I pulled it today, with Phase 1 of my [substrate-crossing prototype](https://github.com/jediwright/employment-seam/tree/main/substrate-crossing) complete and Phase 2 being scoped.
 
-The substrate-crossing prototype — the piece of this work that publishes a governed record from a local-first document to a federated network — is pinned to `@automerge/automerge-repo-keyhive@0.5.0-alpha.1`. The Keyhive TypeScript package is the current implementation of the key agreement protocol BeeKEM formalizes. And BeeKEM's Rust implementation (Hexane) is on an alpha cadence, with a stable release estimated for Q4 2026–Q1 2027. Which means the TypeScript surface I'm building against is mid-transition to a replacement.
+The substrate-crossing prototype — the piece of this work that publishes a governed record from a local-first document to a federated network — is pinned to `@automerge/automerge-repo-keyhive@0.5.0-alpha.1`. The Keyhive TypeScript package is the current implementation of the key agreement protocol BeeKEM formalizes. And BeeKEM's Rust implementation ([Hexane](https://github.com/automerge/automerge/tree/main/rust/hexane)) is on an alpha cadence, with a stable release estimated for Q4 2026–Q1 2027. Which means the TypeScript surface I'm building against is mid-transition to a replacement.
 
 ---
 
@@ -20,7 +20,7 @@ None of this is a criticism. It's a research lab pattern, and it's a reasonable 
 
 ---
 
-What it means, practically, is that the TypeScript sync surface may be a migration cliff waiting to land. Teams that built tightly against it — importing sync primitives directly, coupling test infrastructure to specific API shapes, assuming the package version is stable — will have meaningful work to do when Hexane stabilizes, and the TypeScript implementation either freezes or gets deprecated. That window is probably six to twelve months out. It's not a crisis. It's a design input.
+What it means, practically, is that the TypeScript API surface may be a migration cliff waiting to land — not the document format, which is frozen by the Automerge binary specification and can't change without breaking every existing document, but the layer above it: how TypeScript code currently reaches into the repo sync protocol. Teams that built tightly against it — importing sync primitives directly, coupling test infrastructure to specific API shapes, assuming the package version is stable — will have meaningful work to do when Hexane stabilizes, and the TypeScript implementation either freezes or gets deprecated. That window is probably six to twelve months out. It's not a crisis. It's a design input.
 
 The response I chose before Phase 1 opened was to treat the sync layer as explicitly swappable. The crossing-record schema — the thing that actually carries governance meaning across the boundary — is specified at the pattern level, not the package level. It describes what a crossing record must contain and why. The implementation wires it to the current packages; the spec survives a package replacement. When Hexane lands, the migration touches one surface. The governance layer doesn't move.
 

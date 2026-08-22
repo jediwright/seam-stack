@@ -19,7 +19,7 @@ Record type: append-only lineage register
 | Status | SUPPORTED |
 | Declared | 2026-08-22 |
 | Deprecation horizon | Not yet set |
-| Content-address reference | Pending operator apply — content hash to be computed against the canonical schema spec file at apply time |
+| Content-address reference | sha256:3080f2279c521c64d5cfad38bd3545656b3c3e6517c648edaa8a6fcaab09a7dd |
 | Successor | None |
 | Prior versions in namespace | None — initial version for this namespace |
 

@@ -10,11 +10,11 @@ I pulled it today, with Phase 1 of my [substrate-crossing prototype](https://git
 
 The substrate-crossing prototype — the piece of this work that publishes a governed record from a local-first document to a federated network — is pinned to `@automerge/automerge-repo-keyhive@0.5.0-alpha.1`. The Keyhive TypeScript package is the current implementation of the key agreement protocol BeeKEM formalizes. And BeeKEM's Rust implementation (Hexane) is on an alpha cadence, with a stable release estimated for Q4 2026–Q1 2027. Which means the TypeScript surface I'm building against is mid-transition to a replacement.
 
-This is the third time this has happened with a project this work depends on.
-
 ---
 
-Ink & Switch follows a legible arc. Deep research. Lab notebook entries as the findings accumulate. Formal validation when the design is settled enough to stake academic credibility on it. A synthesizing essay. Then the handoff — the project moves to the community, the ecosystem, or wherever the ecosystem currently is. Cambria followed it. Automerge followed it and landed more successfully than most, because there were enough production users with enough stake in it to sustain real maintenance. Keyhive on TypeScript is now at the notebook-close stage of the same arc, with Hexane, the successor implementation, already in motion.
+Ink & Switch follows a legible arc. Deep research. Lab notebook entries as the findings accumulate. Formal validation when the design is settled enough to stake academic credibility on it. A synthesizing essay. Then the handoff — the project moves to the community, the ecosystem, or wherever the ecosystem currently is.
+
+Automerge went through this cycle before Keyhive did. It landed better than most handoffs because there were enough production users with enough stake in it to sustain real maintenance — but it still took years, and the adoption base still seems narrow relative to the idea's scale. Watching that transition is part of why the swappable-layer decision got made early this time. Keyhive on TypeScript is now at the notebook-close stage of the same arc, with Hexane, the successor implementation, already in motion. How that resolves is still open.
 
 None of this is a criticism. It's a research lab pattern, and it's a reasonable one. The lab produces rigorous foundations. The notebook closing on a formal security proof likely means the protocol design is settled — which is useful information if you're building on it. The question is what it means for the build.
 

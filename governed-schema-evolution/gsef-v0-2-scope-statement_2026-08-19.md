@@ -1,12 +1,5 @@
 # GSEF v0.2 Scope Statement
 
-**Artifact class:** GSEF scope statement, v0.1 → v0.2 revision (canonicalizes the
-Q-A verdict, the T-2 temporal-crossing check definition, and the M5 admissibility
-naming).
-**Date:** 2026-08-19
-**Session:** GSEF v0.2 Scope Statement Session (Session Harness v0.2, Mode 1,
-CONTEXTUAL)
-**Status:** CANONICAL — applied 2026-08-22. 
 ---
 
 ## 1. Scope statement (normative)

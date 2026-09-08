@@ -142,12 +142,15 @@ claim. It is the most speculative of the projects, and the one that, if it holds
 reframes all the others. The seam domain is the first evidentiary, legal-stakes 
 domain mapped against it.
 
-**[Pattern Commons](https://github.com/jediwright/seam-stack)** is the
-specification layer that sits on the second axis of the composition ladder.
-Each Pattern Commons entry governs a class of crossing — defining the
-boundary conditions, signing ceremony, and evidence requirements for a
-specific domain. [PC#7](https://github.com/jediwright/employment-seam) is
-the current entry for the employment seam.
+**[Pattern Commons](https://github.com/jediwright/local-first-series/tree/main/pattern-commons)** 
+is the specification layer that sits on the second axis of the composition ladder. Each Pattern 
+Commons entry governs a class of crossing — defining the boundary conditions, signing ceremony, and 
+evidence requirements for a specific domain. [PC#00](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing.md)
+defines the pattern itself; [PC#7](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-07-employment-seam.md)
+(employment), [PC#8](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-08-substrate-crossing-seam.md)
+(substrate crossing), and [PC#9](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-09-governed-content-production-crossing.md)
+(governed content production) are the entries with placed specs behind them; the employment seam has a working
+[prototype](https://github.com/jediwright/employment-seam).
 
 **[Tiered Content Framework (TCF)](https://www.jediwright.com/content-strategy-framework)** is
 a content governance framework developed alongside the Seam Stack that

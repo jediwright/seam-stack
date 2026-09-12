@@ -114,7 +114,7 @@ Lineage records for each vocabulary namespace:
 
 The Pattern Commons is the canonical taxonomy of governed crossing classes. Each entry specifies a domain instantiation of the governed crossing pattern — naming the seam trigger, the participant model, the grant structure, the gate conditions, the record schema, and the failure taxonomy for that class.
 
-**[PC#0 — The Governed Crossing](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing.md)** is the root entry: the abstract pattern that all domain entries instantiate. Read this first.
+**[PC#00 — The Governed Crossing](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing.md)** is the root entry: the abstract pattern that all domain entries instantiate. Read this first.
 
 Current canonical entries:
 

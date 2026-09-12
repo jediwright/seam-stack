@@ -100,9 +100,9 @@ Lineage records for each vocabulary namespace:
 
 **[Keyhive employment seam](https://github.com/jediwright/employment-seam)** is the primary development track — the first instance of the pattern built on an authorization-backed substrate (Automerge + Keyhive), and the first to include revocation as a first-class architectural event.
 
-**[Pattern Commons #7 v0.5](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-07-employment-seam.md)** is the current specification for the employment seam, documenting the boundary layer for the employment relationship: entry seam, exit seam, gate-check records, agent capability grants, and revocation discipline.
+**[Pattern Commons #00 — The Governed Crossing](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing.md)** is the abstract pattern the Seam Stack formalizes: the boundary event at which a party crosses into or out of a structured relationship under a capability grant, with four invariant properties — declared scope, grant, gate, record — across all domain instantiations.
 
-**[Pattern Commons #0 — The Governed Crossing](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing.md)** is the abstract pattern the Seam Stack formalizes: the boundary event at which a party crosses into or out of a structured relationship under a capability grant, with four invariant properties — declared scope, grant, gate, record — across all domain instantiations.
+**[Pattern Commons #7 — The Empoyment Seam](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-07-employment-seam.md)** is the current specification for the employment seam, documenting the boundary layer for the employment relationship: entry seam, exit seam, gate-check records, agent capability grants, and revocation discipline.
 
 **[Pattern Commons #8 — The Substrate-Crossing Seam](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-08-substrate-crossing-seam.md)** governs crossings from local-first substrates into publicly indexed, relay-distributed regimes, with AT Protocol as the reference implementation. Phases 0 through 3 are complete: 51/51 tests pass, live AT Protocol crossings are documented, the seamCrossingRef back-pointer is verified at the PDS layer, and governance held across a multi-input baseline, a delayed-release run, and a content-integrity run. Two findings narrowed the claim: the authorization-to-fire window is bounded, not closed, and grant-authority lapse before a release horizon was not exercised.
 
@@ -120,7 +120,7 @@ Current canonical entries:
 
 | Entry | Domain | Status |
 |---|---|---|
-| [PC#0](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing.md) | The Governed Crossing — root pattern | v0.1.2 — Counter-Pass complete |
+| [PC#00](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-00-the-governed-crossing.md) | The Governed Crossing — root pattern | v0.1.2 — Counter-Pass complete |
 | [PC#7](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-07-employment-seam.md) | Employment Seam | v0.5 — reference implementation |
 | [PC#8](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-08-substrate-crossing-seam.md) | Substrate-Crossing Seam (AT Protocol) | v0.3 — Phases 0–3 complete; 51/51 tests passing |
 | [PC#9](https://github.com/jediwright/local-first-series/blob/main/pattern-commons/pattern-commons-09-governed-content-production-crossing.md) | Governed Content Production Crossing (TCF publish gate) | v0.3 — Counter-Pass converged with narrowing; not yet prototyped; companion runtime Phase 0 complete |

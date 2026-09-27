@@ -86,6 +86,8 @@ The `seam:CrossingRecord` vocabulary is the schema contract. The four layers are
 
 [THEORY.md](https://github.com/jediwright/seam-stack/blob/main/THEORY.md) — Why the four layers are composed in this order, and the cross-domain research that grounds the structural argument.
 
+[BLUEPRINT.md](https://github.com/jediwright/seam-stack/blob/main/BLUEPRINT.md) — The full map of the work: the architecture, every repository, the pattern's application notes and known limits, the working method, and a lexicon of architecture and method terms.
+
 **Governed schema evolution** — schema changes to Seam Stack vocabularies are
 classified by blast radius and change driver under [GSEF v0.2](governed-schema-evolution/gsef-v0-2-scope-statement_2026-08-19.md).
 Lineage records for each vocabulary namespace:

@@ -1,6 +1,6 @@
 # The Seam Stack — Technical Architecture Blueprint
 
-**Version:** v0.3 · **Date:** September 27, 2026
+**Version:** v0.3.1 · **Date:** September 27, 2026
 **Scope:** The architecture, repositories, and working method behind the Seam Stack portfolio (Systems of Thought · UX Minds, LLC)
 **Audience:** Mixed technical and strategic readers. Part One is written for anyone; Part Two assumes comfort with distributed systems; Part Three is a lexicon split into architecture terms and method terms.
 **Scope note:** This is the full accounting of the work, including the internal method and its vocabulary. Internal material is included by design and marked where it appears.
@@ -415,7 +415,7 @@ These terms describe how the work is run. In the project's practice they live in
 
 **Counter-Pass** — An adversarial review cycle. A siloed critic session attacks a draft, and the producer reconciles each finding. There are at most three iterations; non-convergence is logged as a finding rather than forced.
 
-**Delivery-not-application** — Sessions produce files; the operator applies them to the canonical copies on his own machine. A hosted surface is never treated as the record.
+**Delivery-not-application** — Sessions produce files; the operator applies them to the canonical copies on the operator's own machine. A hosted surface is never treated as the record.
 
 **Env-3 / siloed session** — A fresh session with memory off and no project knowledge, given only the prompt and the attached inputs. The isolation tier used for critics.
 
@@ -470,6 +470,8 @@ These terms describe how the work is run. In the project's practice they live in
 **Sources.** Pattern Commons #00 v0.3; `THEORY.md` and the README in this repository, as of September 27, 2026; UFO Lexicon v2.6.
 
 ## Changelog
+
+**v0.3.1 (September 27, 2026).** Wording: gender-neutral language throughout.
 
 **v0.3 (September 27, 2026).** Aligned to the current README and `THEORY.md`. Added the three kinds of relay exit and the regulated-domain boundary condition, the scoping of the four-layer claim to the local-first commitment, the custody distinction between evidence and the substrate's own log, the nearest prior art (Trust over IP, W3C Verifiable Credentials), the reframing of no-adjudication as a design choice with its three out-of-scope crossing kinds, and the v0 enforcement scope. Expanded the known limits accordingly.
 

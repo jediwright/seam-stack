@@ -2,6 +2,10 @@
 
 A four-layer architectural pattern for local-first systems where the seam, not the server, is the primary build and design surface.
 
+[![The Seam Stack — One-Sheet](one-sheet/preview.jpg)](https://jediwright.github.io/seam-stack/one-sheet/)
+
+*The whole portfolio on one sheet. Click through for the animated version.*
+
 ---
 
 ### The problem
